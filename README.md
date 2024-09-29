@@ -11,11 +11,8 @@ To access new answers, machine learning is applied and historical StackOverflow 
 The data is taken from kaggle: https://www.kaggle.com/datasets/stackoverflow/stackoverflow.
 Data was preprocessed and cleaned up: removal of HTML tags, links, conversion to lowercase, replacement of abbreviations with full forms.
 
-In `data_analysis.ipynb`, the dataset was analyzed and training/test partitions were created.
-In `tfidf_baseline.ipynb`, the TF-IDF and logistic regression baseline were trained.
-In `transformers_baseline.ipynb`, the Transformer-based models were trained.
-
 # Binary classification
+
 As the easiest version of the task, we create labeling for binary classification. The
 model has to predict whether the answer score is positive or not. Applying this
 filter results into 587993 (0.66%) positive, 300366 (0.33%) nonpositive samples
@@ -23,4 +20,9 @@ in train subset and 65175 (0.65%) positive, 33588 (0.34%) nonpositive samples
 in test subset.
 
 # Metrics
+
 To evaluate the classification results, the following indicators were calculated: accuracy, macro score F1 and weighted score F1.
+
+In `data_analysis.ipynb`, the dataset was analyzed and training/test partitions were created.
+In `tfidf_baseline.ipynb`, the TF-IDF and logistic regression baseline were trained.
+In `transformers_baseline.ipynb`, the Transformer-based models were trained.
